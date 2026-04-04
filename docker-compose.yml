@@ -1,0 +1,8 @@
+services:
+  opencode:
+    build: .
+    container_name: opencode-server
+    ports:
+      - "4096:4096"
+    restart: unless-stopped
+    # Hvis du bruger GPU på din NUC/Windows kan vi tilføje deploy sektionen her
