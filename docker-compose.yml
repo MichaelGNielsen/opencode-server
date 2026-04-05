@@ -3,7 +3,8 @@ services:
     image: ghcr.io/anomalyco/opencode:latest
     container_name: opencode-server
     ports:
-      - "4096:4096"
+      # Isoleret port (4097) for at undgå konflikt med nativ OpenCode (4096)
+      - "4097:4096"
     volumes:
       # Giver OpenCode adgang til rodbiblioteket, hvor alle projekter ligger
       - ../:/workspace
