@@ -23,12 +23,12 @@ Ved at køre denne server i Docker, kan du nemt stille AI-funktionalitet til rå
    ```
 
 ## Anvendelse
-Når serveren kører, kan den tilgås på port **4096**.
+Når serveren kører, kan den tilgås på port **4097**. Porten er bevidst forskudt fra OpenCodes standardport (4096) for at undgå netværkskonflikter, hvis du også bruger OpenCode nativt i din egen terminal.
 
-- **Fra samme maskine:** `http://localhost:4096`
-- **Fra andre maskiner på netværket:** `http://<VÆRTENS-IP>:4096`
+- **Fra samme maskine:** `http://localhost:4097`
+- **Fra andre maskiner på netværket:** `http://<VÆRTENS-IP>:4097`
 
-Serveren bruger `opencode-ai` pakken og er konfigureret til at køre med `opencode serve`.
+Serveren bruger det officielle `ghcr.io/anomalyco/opencode` Docker-image og er konfigureret til at køre med `serve --hostname 0.0.0.0`.
 
 ## Krav
 - Docker
