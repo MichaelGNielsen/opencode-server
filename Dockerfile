@@ -13,6 +13,5 @@ RUN npm install -g opencode-ai
 # Eksponer server-porten
 EXPOSE 4096
 
-# Start serveren
-# Vi tvinger hostname til 0.0.0.0 så den kan rammes udefra containeren
+# Start serveren (Jf. din instruks)
 CMD ["opencode", "serve", "--port", "4096", "--hostname", "0.0.0.0"]

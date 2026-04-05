@@ -1,8 +1,12 @@
 services:
   opencode:
-    build: .
+    image: ghcr.io/anomalyco/opencode:latest
     container_name: opencode-server
     ports:
       - "4096:4096"
+    volumes:
+      # Giver OpenCode adgang til rodbiblioteket, hvor alle projekter ligger
+      - ../:/workspace
+    # Kører headless server, bundet til 0.0.0.0 (alle netværk), så den kan nås af andre containere via host
+    command: serve --port 4096 --hostname 0.0.0.0
     restart: unless-stopped
-    # Hvis du bruger GPU på din NUC/Windows kan vi tilføje deploy sektionen her
