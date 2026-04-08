@@ -1,7 +1,7 @@
 services:
   opencode:
     image: ghcr.io/anomalyco/opencode:latest
-    container_name: opencode-server
+    container_name: opencode
     ports:
       # Tilbage til standard port
       - "4096:4096"
