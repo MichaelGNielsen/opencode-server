@@ -34,6 +34,9 @@ Når serveren kører, kan den tilgås på port **4096**. OpenCodes standardport 
 
 Serveren bruger det officielle `ghcr.io/anomalyco/opencode` Docker-image og er konfigureret til at køre med `serve --hostname 0.0.0.0`.
 
+## API Guide
+For instructions on how to call OpenCode using cURL and manage sessions, see: [OpenCode API How-To](docs/opencode_howto.md)
+
 ## Krav
 
 - Docker
