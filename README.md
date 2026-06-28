@@ -37,11 +37,19 @@ Serveren bruger det officielle `ghcr.io/anomalyco/opencode` Docker-image og er k
 ## API Guide
 For instructions on how to call OpenCode using cURL and manage sessions, see: [OpenCode API How-To](docs/opencode_howto.md)
 
+## Metafiles Guide
+For instructions on how to use project metafiles (`memory.md`, `journal.md`, `skills.md`, `TODO.md`) for persistent agent context across sessions, see: [OpenCode Metafiles How-To](docs/opencode-metafiles-howto.md)
+
 ## Krav
 
 - Docker
 - Docker Compose
 
-## Documentation Standards
+## Documentation
 
-For information on Markdown formatting guidelines, please refer to: [Markdown Rules](md-rule.md)
+| Dokument | Beskrivelse |
+|----------|-------------|
+| [GEMINI.md](GEMINI.md) | Projektets kontrakt og meta-engineering principper for agenten |
+| [docs/opencode_howto.md](docs/opencode_howto.md) | API-vejledning: cURL-kald og session-håndtering |
+| [docs/opencode-metafiles-howto.md](docs/opencode-metafiles-howto.md) | Metafiler (`memory.md`, `journal.md`, `skills.md`, `TODO.md`) — persistent agent-kontekst på tværs af sessioner |
+| [docs/md-rules.md](docs/md-rules.md) | Markdown formaterings-regler for projektet |
